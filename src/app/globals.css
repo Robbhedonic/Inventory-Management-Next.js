@@ -9,8 +9,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ededed ;
+    --foreground:  #0a0a0a;
   }
 }
 
@@ -19,9 +19,64 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
+
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite que los ítems se envuelvan en múltiples filas */
+  gap: 16px;
+  /* Espaciado entre las tarjetas */
+
+  /* Centra las tarjetas en el contenedor */
+
+}
+.card {
+  border: 1px solid rgba(226, 226, 226, 0.523);
+  /* Borde rojo */
+  border-radius: 8px;
+  /* Bordes redondeados */
+  padding: 16px;
+  /* Espacio interno de la tarjeta */
+  max-width: 250px;
+  /* Ancho máximo de cada tarjeta */
+  flex: 1 1 250px;
+  /* Flexibilidad para el tamaño de las tarjetas */
+  box-sizing: border-box;
+  /* Incluye el borde y el padding en el ancho total */
+  background-color: #fff;
+  /* Color de fondo blanco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  /* Sombra sutil */
+}
+
+/* globals.css */
+
+/* Cambiar color del texto en todos los campos de entrada y etiquetas */
+input,
+textarea,
+select,
+label {
+  color: #333;
+  /* Cambiar #333 al color que desees */
+}
+
+/* Opcional: Cambiar color del texto en los botones */
+button {
+  color: #fff;
+  /* Cambiar #fff al color que desees para el texto del botón */
+}
+
+
+/* ItemForm.module.css o tu archivo de estilos */
+
+
+
+
+
